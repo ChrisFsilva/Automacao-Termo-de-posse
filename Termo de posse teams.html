@@ -1,0 +1,85 @@
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 800px;
+        }
+
+        #customers,#customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #f0e85b;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr {
+            width: 100%;
+        }
+    </style>
+    </head>
+    <body style="background-color: white">
+        <div style="display: flex; justify-content: center; padding-bottom: 100px" align="center">
+            <table id="customers" style="box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);">
+                <thead>
+                    <tr>
+                        <td style="text-align: right; padding-right: 10px; padding-left: 30px; background-color: #646464; color: #f0e85b;">
+                            <span style="font-size: 12px;">Gestão de field services</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #ffffff; text-align: center; background-color: gray; ">
+                            <span style="class:uppercase;">TERMO DE POSSE</span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p style="padding: 30px; text-align: center;">
+                            Olá @{triggerOutputs()?['body/Colaborador/DisplayName']}</p>
+                        <p style="padding: 30px; text-align: center;"> 
+                            foi enviado para o seu e-mail corporativo o termo de posse referente ao notebook @{triggerOutputs()?['body/Equipamento/Value']}, etiqueta TI @{triggerOutputs()?['body/Title']} e acessórios</p>
+                        <p style="padding: 30px; text-align: center;"> 
+                            Por favor, tome um momento para revisar o Termo de Posse, que estabelece os detalhes relacionados à posse e responsabilidade do notebook e acessórios associados.</p>
+                        <p style="padding: 30px; text-align: center;"> 
+                            Lembramos que a assinatura deste documento é essencial para formalizar a responsabilidade sobre o equipamento fornecido. Caso já tenha assinado, por favor, ignore este lembrete.</p>
+                        <p style="padding: 30px; text-align: center;"> 
+                            Em caso de dúvidas ou dificuldades, entre em contato com o departamento de suporte técnico.</p>
+                        <p style="padding: 30px; text-align: center;"> 
+                            Agradecemos pela sua cooperação e prontidão em resolver este assunto o mais rápido possível.</p>
+                    </td>
+                </tr>          
+                <tfoot>
+                    <tr style="background-color: Gray; color: white;">
+                        <td style="padding-top: 10px; padding-bottom: 10px; text-align: center; ">
+                            <span style="font-size: 10px; color: #f0e85b;">GESTÃO DE FIELD SERVICE |</span>
+                            <span style="font-size: 10px; color: #f0e85b;">V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A |</span>
+                            <span style="font-size: 10px; color: #f0e85b;">TECNOLOGIA DE INFRA E OPERAÇÕES DE TI </span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
