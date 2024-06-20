@@ -10,7 +10,7 @@ Tabela de conteúdos
    * [Layout](#-layout)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
-     * [Rodando a aplicação](#-Rodando-a-aplicação-Web)
+     * [Funcionalidades](#Funcionalidades:)
    * [Tecnologias](#-tecnologias)
    * [Autor](#-autor)
    * [Licença](#-licença)
@@ -19,26 +19,14 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-  * Situação
-- Processo de documentação legal referente aos equipamentos e acessorios fornecidos ao colaborador.
-- Processo realizado totalmente de forma manual com base nas ferramentas conhecidas pelo técnico.
-  * Problema enfrentado
-- Sem padronização do documento.
-- Documentos que não cumpriam LGPD.
-- Sem precisão na confirmação do material entregua.
-- Sem padronização no tipo de arquivo
-- Sem padronização no método de entrega
-- Erros de português
-  * Execução da solução
-- Através do Sharepoint é alimentado um banco de dado.
-- Quando o técnico define o status como "Gerar termo de posse" aciona uma API do Approvous que envia um e-mail para o colaborador, constando a lista dos equipamentos fornecidos.
-- O e-mail possui comando TypeScript cujo o colaborador utilizará para confirmar se as informações de equipamento estão corretas
-- Caso ele confirme será uma acinada uma API via JavaScript
-- Essa API fornece as informações ao Power automate onde é criado um documento em HTML e outro PDF.
-- Esse documento é implementado como TypeScript no corpo do e-mail alem do PDF ser anexo e enviado ao colaborador.
-- Caso ele recuse deverá preencher um formulario justificando o motivo da recusa
-- Técnico responsavel e gestor receberão um e-mail notificando a recusa com os detalhes adicionado pelo colaborador
-- Caso o status seja alterado para "Devolução do equipamento" será enviado um termo utilizando o banco de dados para o e-mail pessoal do colaborador constando todos os itens que ele devolveu, de acordo com os critérios da LGPD.
+Descrição:
+Este projeto visa automatizar o processo de onboarding de novos funcionários usando Power Automate. O fluxo automatizado gerencia tarefas como concessão de acesso a sistemas internos, envio de materiais de boas-vindas e configuração de reuniões introdutórias. O projeto também utiliza uma API JavaScript para comunicação com a Gupy, facilitando a integração dos dados dos novos funcionários, e personaliza e-mails de boas-vindas através de programação.
+
+Tecnologias Utilizadas:
+Power Automate: Para a criação e gerenciamento dos fluxos automatizados.
+Microsoft 365: Integração com Outlook, Teams, SharePoint e outros serviços da Microsoft.
+SharePoint: Armazenamento e gerenciamento de documentos e listas de tarefas.
+JavaScript API da Gupy: Integração com a plataforma de recrutamento Gupy para transferência de dados dos novos funcionários.
 
  
 ---
@@ -58,24 +46,43 @@ O layout da aplicação está disponível no LinkedIn:
   <img alt="https://www.linkedin.com/in/chris-f-silva/" title="#moments-automacao" src="https://media.licdn.com/dms/image/D4D2DAQH4VuA7hxM1uw/profile-treasury-image-shrink_800_800/0/1704298974179?e=1706036400&v=beta&t=lgkdphgNnvWQiqKF-svpa_8oziyZEqA5-AEYfHvhqz8" />
 </p>
 
+Componentes Principais:
+AssignAccessFlow: Fluxo para concessão de acesso a sistemas e grupos.
+SendWelcomeEmailFlow: Fluxo para envio de e-mails de boas-vindas personalizados.
+ScheduleMeetingsFlow: Fluxo para agendamento de reuniões no Teams.
+GupyIntegration.js: Script JavaScript para integração com a API da Gupy
+
 ---
 
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
- - Navegador
+- Conta Microsoft 365 com permissões de administrador.
+- Licença Power Automate.
+- Configuração do SharePoint e Microsoft Teams.
+- API key da Gupy para integração.
+<b>Instalação:<b>
+- Certifique-se de que sua conta Microsoft 365 tem permissões de administrador.
+- Crie um site no SharePoint para armazenar documentos de onboarding e listas de tarefas.
+- Obtenha e configure a API key da Gupy para comunicação com a plataforma de recrutamento.
+- No Power Automate, crie um novo fluxo e configure os gatilhos e ações conforme descrito nas funcionalidades.
 
-Devido ao conteúdo sensivel presente na codificação, os códigos responsaveis pelo Power Automate e API Gupy não serão publicados.
-
-#### 🧭 Rodando a aplicação Web
+#### 🧭 Funcionalidades:
 ```bash
 
-# Clone este repositório
-$ git clone https://github.com/ChrisFsilva/Automacao-Onbord
+Coleta de Informações: Recebe dados do novo funcionário diretamente da Gupy via API.
+Integração com Gupy: Utiliza a API JavaScript para importar dados dos novos funcionários da plataforma Gupy.
+Configuração de Acessos: Concede acesso a sistemas e grupos necessários.
+Envio de E-mails Personalizados: Envia e-mails de boas-vindas personalizados usando programação.
+Tarefas no SharePoint: Cria tarefas no SharePoint para o acompanhamento do processo de onboarding.
+Configuração de Reuniões: Agenda reuniões de introdução no Microsoft Tea
 
-
+Guia do Usuário:
+Integração com Gupy: A API JavaScript coleta automaticamente os dados do novo funcionário da plataforma Gupy.
+Automatização Iniciada: O fluxo de Power Automate é disparado automaticamente ao receber novos dados da Gupy.
+Monitorar Tarefas: O responsável pelo onboarding pode monitorar as tarefas no SharePoint.
+Receber Notificações: O novo funcionário e os responsáveis recebem notificações por e-mail conforme o processo avança.
 
 ```
 
@@ -104,6 +111,6 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença [MIT](./LICENSE)
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes. [MIT](./LICENSE)
 
 Feito por: Christopher Silva
