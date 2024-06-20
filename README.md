@@ -10,7 +10,7 @@ Tabela de conteúdos
    * [Layout](#-layout)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
-     * [Funcionalidades](#-Funcionalidades:)
+     * [Funcionalidades](#Funcionalidades)
    * [Tecnologias](#-tecnologias)
    * [Autor](#-autor)
    * [Licença](#-licença)
@@ -68,7 +68,7 @@ GupyIntegration.js: Script JavaScript para integração com a API da Gupy
 - Obtenha e configure a API key da Gupy para comunicação com a plataforma de recrutamento.
 - No Power Automate, crie um novo fluxo e configure os gatilhos e ações conforme descrito nas funcionalidades.
 
-#### 🧭 Funcionalidades:
+#### Funcionalidades
 ```bash
 
 Coleta de Informações: Recebe dados do novo funcionário diretamente da Gupy via API.
