@@ -65,7 +65,8 @@ Componentes Principais:
  -Licença Power Automate.
  -Configuração do SharePoint.
  -Configuração do Microsoft Approval.
-<b>Instalação:<b>
+
+Instalação:
  -Certifique-se de que sua conta Microsoft 365 tem permissões de administrador.
  -Crie uma biblioteca de documentos no SharePoint para armazenar os termos de posse.
  -No Power Automate, crie um novo fluxo e configure os gatilhos e ações conforme descrito nas funcionalidades.
