@@ -91,7 +91,7 @@ Guia do Usuário:
 
 As seguintes tecnologias foram usadas na construção do projeto:
 
--   **[HTML/CSS]([https://www.javascript.com/](https://developer.mozilla.org/pt-BR/docs/Web/HTML)/)** 
+-   **[HTML/CSS](https://developer.mozilla.org/pt-BR/docs/Web/HTML)** 
 -   **[Microsoft Aprovações](https://support.microsoft.com/pt-br/office/o-que-s%C3%A3o-aprova%C3%A7%C3%B5es-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)** 
 -   **[Power Automate](https://www.microsoft.com/pt-br/power-platform/products/power-automate)**
 -   **[SharePoint](https://www.microsoft.com/pt-br/microsoft-365/sharepoint/collaboration)**
