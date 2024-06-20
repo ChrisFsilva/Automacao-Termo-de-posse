@@ -20,14 +20,14 @@ Tabela de conteúdos
 ## 💻 Sobre o projeto
 
 Descrição:
-Este projeto visa automatizar o processo de onboarding de novos funcionários usando Power Automate. O fluxo automatizado gerencia tarefas como concessão de acesso a sistemas internos, envio de materiais de boas-vindas e configuração de reuniões introdutórias. O projeto também utiliza uma API JavaScript para comunicação com a Gupy, facilitando a integração dos dados dos novos funcionários, e personaliza e-mails de boas-vindas através de programação.
+Este projeto visa automatizar a emissão de termos de posse de equipamentos de TI para colaboradores da empresa usando Power Automate. O fluxo automatizado gerencia tarefas como a geração dos documentos de posse, envio para assinatura via Microsoft Approval e armazenamento dos termos assinados. O modelo do documento é criado usando HTML e CSS para garantir um layout profissional e personalizável.
 
 Tecnologias Utilizadas:
-Power Automate: Para a criação e gerenciamento dos fluxos automatizados.
-Microsoft 365: Integração com Outlook, Teams, SharePoint e outros serviços da Microsoft.
-SharePoint: Armazenamento e gerenciamento de documentos e listas de tarefas.
-JavaScript API da Gupy: Integração com a plataforma de recrutamento Gupy para transferência de dados dos novos funcionários.
-
+ -Power Automate: Para a criação e gerenciamento dos fluxos automatizados.
+ -Microsoft 365: Integração com Outlook, SharePoint e outros serviços da Microsoft.
+ -SharePoint: Armazenamento e gerenciamento dos termos de posse.
+ -Microsoft Approval: Gerenciamento do processo de assinatura dos termos de posse.
+ -HTML e CSS: Criação do modelo de documento.
  
 ---
 
@@ -47,10 +47,13 @@ O layout da aplicação está disponível no LinkedIn:
 </p>
 
 Componentes Principais:
-AssignAccessFlow: Fluxo para concessão de acesso a sistemas e grupos.
-SendWelcomeEmailFlow: Fluxo para envio de e-mails de boas-vindas personalizados.
-ScheduleMeetingsFlow: Fluxo para agendamento de reuniões no Teams.
-GupyIntegration.js: Script JavaScript para integração com a API da Gupy
+ -GenerateTermsFlow: Fluxo para criação dos termos de posse de equipamentos de TI.
+ -SendForApprovalFlow: Fluxo para envio dos termos de posse para assinatura via Microsoft Approval.
+ -StoreSignedTermsFlow: Fluxo para armazenamento dos termos de posse assinados no SharePoint.
+ -NotifyStatusFlow: Fluxo para envio de notificações por e-mail sobre o status da assinatura.
+ -term_template.html: Modelo de documento em HTML.
+ -term_style.css: Estilos do documento em CSS.
+ -TermsLibrary: Biblioteca de documentos no SharePoint para armazenamento dos termos de posse.
 
 ---
 
@@ -58,31 +61,27 @@ GupyIntegration.js: Script JavaScript para integração com a API da Gupy
 
 ### Pré-requisitos
 
-- Conta Microsoft 365 com permissões de administrador.
-- Licença Power Automate.
-- Configuração do SharePoint e Microsoft Teams.
-- API key da Gupy para integração.
+ -Conta Microsoft 365 com permissões de administrador.
+ -Licença Power Automate.
+ -Configuração do SharePoint.
+ -Configuração do Microsoft Approval.
 <b>Instalação:<b>
-- Certifique-se de que sua conta Microsoft 365 tem permissões de administrador.
-- Crie um site no SharePoint para armazenar documentos de onboarding e listas de tarefas.
-- Obtenha e configure a API key da Gupy para comunicação com a plataforma de recrutamento.
-- No Power Automate, crie um novo fluxo e configure os gatilhos e ações conforme descrito nas funcionalidades.
+ -Certifique-se de que sua conta Microsoft 365 tem permissões de administrador.
+ -Crie uma biblioteca de documentos no SharePoint para armazenar os termos de posse.
+ -No Power Automate, crie um novo fluxo e configure os gatilhos e ações conforme descrito nas funcionalidades.
 
 #### Funcionalidades
 ```bash
 
-Coleta de Informações: Recebe dados do novo funcionário diretamente da Gupy via API.
-Integração com Gupy: Utiliza a API JavaScript para importar dados dos novos funcionários da plataforma Gupy.
-Configuração de Acessos: Concede acesso a sistemas e grupos necessários.
-Envio de E-mails Personalizados: Envia e-mails de boas-vindas personalizados usando programação.
-Tarefas no SharePoint: Cria tarefas no SharePoint para o acompanhamento do processo de onboarding.
-Configuração de Reuniões: Agenda reuniões de introdução no Microsoft Tea
-
+ -Geração de Termos de Posse: Cria automaticamente termos de posse de equipamentos de TI para novos colaboradores usando um modelo de documento em HTML e CSS.
+ -Envio para Assinatura: Envia os termos de posse para assinatura via Microsoft Approval.
+ -Armazenamento no SharePoint: Armazena os termos de posse assinados na biblioteca de documentos do SharePoint.
+ -Notificação por E-mail: Envia notificações por e-mail para os colaboradores sobre o status da assinatura.
 Guia do Usuário:
-Integração com Gupy: A API JavaScript coleta automaticamente os dados do novo funcionário da plataforma Gupy.
-Automatização Iniciada: O fluxo de Power Automate é disparado automaticamente ao receber novos dados da Gupy.
-Monitorar Tarefas: O responsável pelo onboarding pode monitorar as tarefas no SharePoint.
-Receber Notificações: O novo funcionário e os responsáveis recebem notificações por e-mail conforme o processo avança.
+ -Geração de Termos: O fluxo de Power Automate é iniciado para gerar automaticamente os termos de posse para novos colaboradores, utilizando o modelo HTML e CSS.
+ -Envio para Assinatura: Os termos de posse são enviados para o colaborador via Microsoft Approval para assinatura.
+ -Armazenamento dos Termos: Após a assinatura, os termos são automaticamente armazenados na biblioteca de documentos do SharePoint.
+ -Notificação: O colaborador e os responsáveis são notificados por e-mail sobre o status da assinatura.
 
 ```
 
@@ -92,8 +91,8 @@ Receber Notificações: O novo funcionário e os responsáveis recebem notifica�
 
 As seguintes tecnologias foram usadas na construção do projeto:
 
--   **[JavaScript](https://www.javascript.com/)** 
--   **[TypeScript](https://www.typescriptlang.org/)** 
+-   **[HTML/CSS]([https://www.javascript.com/](https://developer.mozilla.org/pt-BR/docs/Web/HTML)/)** 
+-   **[Microsoft Aprovações](https://support.microsoft.com/pt-br/office/o-que-s%C3%A3o-aprova%C3%A7%C3%B5es-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)** 
 -   **[Power Automate](https://www.microsoft.com/pt-br/power-platform/products/power-automate)**
 -   **[SharePoint](https://www.microsoft.com/pt-br/microsoft-365/sharepoint/collaboration)**
 ---
@@ -111,6 +110,6 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ## 📝 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes. [MIT](./LICENSE)
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.. [MIT](./LICENSE)
 
 Feito por: Christopher Silva
