@@ -36,11 +36,8 @@ Tecnologias Utilizadas:
 O layout da aplicação está disponível no LinkedIn:
 
 O layout da aplicação está disponível no pinteres:
-<p align="center">
-  <img src="https://i.pinimg.com/1200x/c4/75/c8/c475c8aa0c4215ebfde64d9837f2f0da.jpg" style="width:200px;" />
-</p>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;  width="50">
-  <img alt="Termo de posse By Christopher Silva" title="#Posse-automacao" src="https://i.pinimg.com/1200x/c4/75/c8/c475c8aa0c4215ebfde64d9837f2f0da.jpg" />
+  <img alt="Termo de posse By Christopher Silva" title="#Posse-automacao" src="https://i.pinimg.com/1200x/c4/75/c8/c475c8aa0c4215ebfde64d9837f2f0da.jpg" style="width:300px;"/>
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
