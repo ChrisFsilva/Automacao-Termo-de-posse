@@ -41,13 +41,13 @@ O layout da aplicação está disponível no pinteres:
 </p>
 	  
 ### Componentes Principais:
- -GenerateTermsFlow: Fluxo para criação dos termos de posse de equipamentos de TI.
- -SendForApprovalFlow: Fluxo para envio dos termos de posse para assinatura via Microsoft Approval.
- -StoreSignedTermsFlow: Fluxo para armazenamento dos termos de posse assinados no SharePoint.
- -NotifyStatusFlow: Fluxo para envio de notificações por e-mail sobre o status da assinatura.
- -term_template.html: Modelo de documento em HTML.
- -term_style.css: Estilos do documento em CSS.
- -TermsLibrary: Biblioteca de documentos no SharePoint para armazenamento dos termos de posse.
+ <p>-GenerateTermsFlow: Fluxo para criação dos termos de posse de equipamentos de TI.</p>
+ <p>-SendForApprovalFlow: Fluxo para envio dos termos de posse para assinatura via Microsoft Approval.</p>
+ <p>-StoreSignedTermsFlow: Fluxo para armazenamento dos termos de posse assinados no SharePoint.</p>
+ <p>-NotifyStatusFlow: Fluxo para envio de notificações por e-mail sobre o status da assinatura.</p>
+ <p>-term_template.html: Modelo de documento em HTML.</p>
+ <p>-term_style.css: Estilos do documento em CSS.</p>
+ <p>-TermsLibrary: Biblioteca de documentos no SharePoint para armazenamento dos termos de posse.</p>
 
 ---
 
