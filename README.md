@@ -35,17 +35,14 @@ Tecnologias Utilizadas:
 
 O layout da aplicação está disponível no LinkedIn:
 
-<a href="#">
-  <img alt="Automação do Onboard By Christopher Silva" src="https://img.shields.io/badge/Acessar%20Layout%20-aqui-%2304D361?style=flat-square">
-</a>
-
+O layout da aplicação está disponível no pinteres:
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="https://www.linkedin.com/in/chris-f-silva/" title="#moments-automacao" src="https://media.licdn.com/dms/image/D4D2DAQFhWADyr73FMA/profile-treasury-image-shrink_1920_1920/0/1704298991106?e=1706036400&v=beta&t=zrYm5i4Sa4wA7v-5fx5w2HYSv32kGRqRlR5zyR3Lc-w" />
-</p>
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="https://www.linkedin.com/in/chris-f-silva/" title="#moments-automacao" src="https://media.licdn.com/dms/image/D4D2DAQH4VuA7hxM1uw/profile-treasury-image-shrink_800_800/0/1704298974179?e=1706036400&v=beta&t=lgkdphgNnvWQiqKF-svpa_8oziyZEqA5-AEYfHvhqz8" />
+  <img alt="Termo de posse By Christopher Silva" title="#Posse-automacao" src="https://i.pinimg.com/1200x/c4/75/c8/c475c8aa0c4215ebfde64d9837f2f0da.jpg" />
 </p>
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Termo de posse By Christopher Silva" title="#Posse-automacao" src="https://i.pinimg.com/1200x/81/ae/a3/81aea39d3eec4d0747feb14111d1a674.jpg" />
+</p>
 Componentes Principais:
  -GenerateTermsFlow: Fluxo para criação dos termos de posse de equipamentos de TI.
  -SendForApprovalFlow: Fluxo para envio dos termos de posse para assinatura via Microsoft Approval.
