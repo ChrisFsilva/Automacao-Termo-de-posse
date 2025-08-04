@@ -81,7 +81,19 @@ Guia do Usuário:
  -Notificação: O colaborador e os responsáveis são notificados por e-mail sobre o status da assinatura.
 
 ```
+### 🧑‍💻Guia do Usuário:
 
+```mermaid
+graph TD
+A[Preencher o formulario com dados do colaborador] --> B[Gerar mensagem do teams ou e-mail informativo sobre o fornecimento do equipamento]
+B --> C{O e-mail foi assinado pelo colaborador?}
+C --> |Sim| D[Gerar documento]
+C --> |Não| E[Notificar ao técnico emitente da recusa do colaborador]
+D --> F[Criar item no sharepoint]
+F --> G{Colaborador foi desligado da empresa, devolveu os equipamentos corretos?}
+G --> |Sim| H[Emitir documento de termo de devolução enviado ao e-mail pessoal]
+G --> |Não| I[Emitir notificação de falta de equipamento]
+```
 
 
 ## 🛠 Tecnologias
